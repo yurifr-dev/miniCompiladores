@@ -1,0 +1,28 @@
+// =============================================
+// Programa de exemplo: verificação de paridade
+// e soma com estruturas de controle aninhadas
+// =============================================
+
+int limite = 20;
+int i      = 1;
+int soma   = 0;
+int pares  = 0;
+
+while (i <= limite) {
+    // Verifica se é par usando resto (simulado)
+    // Mini não tem %, então usamos divisão inteira
+    int metade = i / 2;
+    int dobro  = metade * 2;
+    bool eh_par = (dobro == i);
+
+    if (eh_par) {
+        soma  = soma + i;
+        pares = pares + 1;
+    }
+
+    i = i + 1;
+}
+
+// Imprime soma dos pares e quantidade
+print(soma);
+print(pares);
